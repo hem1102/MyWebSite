@@ -1,0 +1,221 @@
+/*
+Plugin: jQuery Parallax
+Author: Ian Lunn
+*/
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	min-width:1024px;
+	padding: 0;
+
+}
+p,h1,h2,h3,a,input
+{
+	font-family:Arial,"MS PGothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック",sans-serif;
+}
+h1,h2,h3
+{
+	margin:30px 0 0 0;
+}
+p
+{	
+	margin:10px 0 0 0;
+}
+img
+{
+	border: 0;
+}
+#profile
+{
+	width:70%;
+	margin: 15% 0 0 5%;
+}
+
+#nav
+{
+	min-width:1024px;
+	margin:50px 0 0 0;
+	z-index:9999;
+	position: fixed;
+	width:100%;
+}
+#nav #nav_board
+{	
+	font-size:32pt;
+	text-align:right;
+	height:50px;
+	background:#ffffff;
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+#nav_board a
+{
+	color:#000000;
+	text-decoration:none;
+}
+#page1,#page2,#page3,#page4
+{
+	color: white;
+	height: 780px;
+	margin: 0 auto;
+	padding: 0;
+	min-width:1024px;
+	padding: 120px 0 0 0;
+}
+#page1
+{
+	background:url(images/firstbg.jpg) 50% 0 no-repeat fixed;
+}
+#page2
+{
+	background: url(images/secondbg.jpg) 50% 0 no-repeat fixed;
+}
+#page3
+{
+	background: url(images/thirdbg.jpg) 50% 0 no-repeat fixed;
+}
+#page4
+{
+	background: url(images/fifthbg.jpg) 50% 0 no-repeat fixed;
+}
+
+#first_frame
+{
+	margin: 530px auto 0;
+	width:1000px; 
+	height:160px;
+	position:relative;
+}
+#second_frame
+{
+	margin: 0 auto;
+	width:1000px; 
+	height:600px;
+	position:relative;
+}
+#second_frame .second_1
+{
+	float:left;
+	margin: 0 0 0 0;
+	width:39%; 
+	height:100%;
+	position:relative;
+	
+}
+#second_frame .second_2
+{
+	float:right;
+	margin: 0 0 0 0;
+	width:59%; 
+	height:48%;
+	position:relative;
+}
+#second_frame .second_3
+{
+	float:right;
+	margin: 2% 0 0 0;
+	width:59%; 
+	height:48%;
+	position:relative;
+}
+#third_frame
+{
+	margin: 0 auto;
+	width:1000px; 
+	height:600px;
+	position:relative;
+}
+#third_frame .third_1
+{
+	float:left;
+	margin: 0 0 0 0;
+	width:25%; 
+	height:100%;
+	position:relative;
+}
+.third_1 .font2
+{
+	text-align: center;
+	padding: 0 0 0 0;
+}
+#third_frame .third_2
+{
+	float:right;
+	margin: 0 0 0 0;
+	width:73%; 
+	height:100%;
+	position:relative;
+}
+#fifth_frame
+{
+	margin: 40px auto;
+	width:1000px; 
+	height:500px;
+	position:relative;
+}
+.board
+{
+	z-index:0;	
+	position:absolute;
+	border-radius:30px;
+	background-color:#000000;
+	height:100%;
+	width:100%;
+	
+	filter:alpha(Opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+.font1,.font2
+{
+	width:100%;
+	margin:0 auto;
+	position:absolute;
+	z-index:2;	
+}
+.font1
+{
+	text-align: center;
+	font-size: 2.5em;
+}
+.font2
+{
+	padding: 0 0 0 10%;
+	text-align: left;
+	font-size: 1.5em;
+}
+.font2 a
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.artbtn,.lanbtn
+{
+	font-size: 1em;
+	text-align: center;
+	border: 0px solid white;
+	outline: none;
+	color:#ffffff;
+	background-color:transparent;
+}
+.artbtn
+{
+	width:90%;
+}
+.lanbtn
+{
+	width:30%;
+}
+.colbtn
+{
+	margin:7px 0 0 7px;
+	border: 0px solid white;
+	outline: none;
+	height:36px;
+	width:36px;
+}
